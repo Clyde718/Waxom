@@ -1,5 +1,6 @@
 @import "_fonts.scss"; // Шрифты
 @import "global/vars"; // Переменные
+@import "global/global"; // Глобальные стили
 @import "libs/libs"; // Сборка из библиотек
 
 * {
@@ -30,6 +31,8 @@ body {
 body {
   min-width: 320px;
   overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -46,6 +49,9 @@ body {
 }
 
 @import "blocks/header";
+@import "blocks/button";
+@import "blocks/burger";
+@import "blocks/services";
 @import "blocks/content";
 @import "blocks/footer";
 // adaptive

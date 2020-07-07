@@ -1,0 +1,139 @@
+/*Саму шапку делаем фиксированой*/
+/*Этот класс является основной, условно это контейнер внутри которого всё происходит*/
+.header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/*Этому-же класс мы делаем псевдоэлементом заливку цвета и определяем размер*/
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+/*Сам контейнер внутри которого расположени элементы меню*/
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+/*Логотип*/
+.header__logo {
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+}
+.header__info {
+  position: relative;
+  z-index: 4;
+}
+.header__logo img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+/*На стандартных экранах бургер спрятан*/
+.header__burger {
+  display: none;
+}
+/*Стили для основного меню и его пунктов*/
+.header__list {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  /*Чтобы не скролилась страница под бургером меню*/
+  body.lock {
+    overflow: hidden;
+  }
+  /*Делаем размер Шапки меньше*/
+  .header__body {
+    height: 50px;
+  }
+  /*Показываем бургер и задаём стили*/
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 4;
+    cursor: pointer;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  /*Стилизация меню*/
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; // для возмржности скрола в горизонтальном положении
+    background-color: #362f2d;
+    padding: 120px 15px 20px 15px;
+    transition: all 0.3s ease 0s;
+    z-index: 3; // *
+  }
+  .header__menu.active {
+    top: 0;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0px 0px 20px 0px;
+  }
+  .header__link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  /*	.content {
+		padding: 60px 0px 0px 0px;
+	}*/
+}
