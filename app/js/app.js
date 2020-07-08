@@ -15,4 +15,32 @@ $(document).ready(function () {
     $('body').toggleClass('lock');
     // Чтобы не скролилась страница под бургером меню
   });
-})
+
+
+
+  $('.theme__slider').slick({
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: true,
+    centerMode: true,
+    variableWidth: true,
+    autoplay: true,
+    initialSlide: 1,
+    speed: 300
+  })
+
+  $('.theme__slider').slick('setPosition');
+
+  var mixer = mixitup('#container', {
+    animation: {
+      effectsOut: 'fade translateX(-100%)'
+    }
+  }); // mixitup 3
+
+
+
+
+});
+

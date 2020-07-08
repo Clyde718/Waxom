@@ -1,3 +1,9 @@
 .slick-list {
   overflow: hidden;
 }
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-search:before {
+  content: "\e986";
+}
