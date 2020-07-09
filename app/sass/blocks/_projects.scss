@@ -35,6 +35,7 @@
   }
 
   &__item {
+    display: none;
     &:hover {
       .projects__inner {
         transform: scaleY(1);
@@ -140,6 +141,10 @@
     &:hover {
       color: #c7b299;
     }
+  }
+  &__load-more {
+    margin: 0 auto;
+    text-align: center;
   }
 }
 

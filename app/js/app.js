@@ -33,11 +33,40 @@ $(document).ready(function () {
 
   $('.theme__slider').slick('setPosition');
 
-  var mixer = mixitup('#container', {
-    animation: {
-      effectsOut: 'fade translateX(-100%)'
+  var mixer = mixitup('#container'); // mixitup 3
+
+
+
+
+  $(".projects__item")  // Load More
+    .slice(0, 6)
+    .show();
+  $("#load-more").on("click", function (e) {
+    e.preventDefault();
+    $(".projects__item:hidden")
+      .slice(0, 3)
+      .slideDown();
+    if ($(".projects__item:hidden").length == 0) {
+      $("#load-more").fadeOut("slow");
     }
-  }); // mixitup 3
+    // $("html,body").animate(
+    //   {
+    //     scrollTop: $(this).offset().top
+    //   },
+    //   1500
+    // );
+  });
+
+
+
+  $('[data-modal=consultation]').on('click', function () {
+    $('#consultation, .overlay').fadeIn(); // открыть заказ консультации 
+  })
+  $('.modal__close').on('click', function () {
+    $('#consultation, .overlay').fadeOut(); // закрывать любое окно по клику на крестик 
+    var leg = $('#iframe').attr("src");
+    $('#iframe').attr("src", leg);
+  })
 
 
 

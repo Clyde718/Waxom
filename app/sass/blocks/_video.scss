@@ -1,0 +1,55 @@
+.video {
+  background: url(../img/dest/video-bg.png) center / cover no-repeat;
+  text-align: center;
+  &__body {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__play {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: $text-color-default;
+    font-weight: 500;
+    margin: 45px 0px 0px 0px;
+  }
+
+  &__description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: $text-color-default;
+    font-weight: 300;
+    max-width: 571px;
+    margin: 28px auto 42px auto;
+  }
+
+  &__time {
+    font-size: 14px;
+    line-height: 24px;
+    color: #c7b299;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+  }
+  .icon-play {
+    font-size: 76px;
+    color: $text-color-default;
+    transition: all 0.3s linear;
+    &:hover {
+      color: #c7b299;
+    }
+  }
+}
