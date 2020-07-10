@@ -100,6 +100,21 @@ $(document).ready(function () {
 
 
 
+  $('.posts__row').slick({
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: '<span class="icon-circle-left"></span>',
+    nextArrow: '<span class="icon-circle-right"></span>',
+    appendArrows: '.posts__controls',
+    infinite: true
+  });
+
+  $('.posts__row').slick('setPosition');
+
+
+
 
 
 
