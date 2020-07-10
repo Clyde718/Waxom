@@ -1,0 +1,96 @@
+.mobile {
+  padding: 78px 0px 0px 0px;
+  &__row {
+    display: flex;
+    margin: 0px -15px;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__columns {
+    padding: 0px 15px;
+    &:nth-child(1) {
+      flex: 0 0 452px;
+      @media (max-width: 991px) {
+        order: 2;
+      }
+    }
+    &:nth-child(2) {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 991px) {
+        order: 1;
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+
+  &__item {
+  }
+
+  &__item-hand {
+    min-height: 616px;
+    background: url(../img/dest/hand-img.png) center / contain no-repeat;
+    @media (max-width: 567px) {
+      min-height: 450px;
+      margin: 2px 0px 0px 0px;
+    }
+    @media (max-width: 338px) {
+      background-size: cover;
+      background-position-x: -5px;
+    }
+  }
+
+  &__item-title {
+  }
+
+  &__item-text {
+    margin: 40px 0px;
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      color: #8c8c8c;
+      font-weight: 300;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+
+  &__item-list {
+    padding: 0px 0px 0px 50px;
+    @media (max-width: 767px) {
+      padding: 0px 0px 0px 20px;
+    }
+  }
+  .subtitle {
+    text-align: left;
+  }
+}
+.mobile-list {
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    margin: 0px 0px 20px 0px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  &__circle {
+    display: inline-block;
+  }
+  &__item {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 0px 0px 0px 30px;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.icon-circle-right {
+  font-size: 20px;
+  color: #c7b299;
+}
