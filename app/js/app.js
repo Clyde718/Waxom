@@ -108,17 +108,44 @@ $(document).ready(function () {
     prevArrow: '<span class="icon-circle-left"></span>',
     nextArrow: '<span class="icon-circle-right"></span>',
     appendArrows: '.posts__controls',
-    infinite: true
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          // arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          // slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          // arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          // slidesToShow: 1
+        }
+      }
+    ]
   });
+
 
   $('.posts__row').slick('setPosition');
 
 
 
+  $(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
 
-
-
-
+    if (wScroll > 20) {
+      $('#main-nav').addClass('active');
+    }
+    else {
+      $('#main-nav').removeClass('active');
+    };
+  })
 
 });
 

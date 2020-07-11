@@ -21,7 +21,6 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 80px;
   align-items: center;
   position: relative;
   z-index: 4;
@@ -49,6 +48,7 @@
 .header__list {
   position: relative;
   z-index: 2;
+  // top: 100px;
 }
 
 @media (max-width: 991px) {
@@ -58,7 +58,7 @@
   }
   /*Делаем размер Шапки меньше*/
   .header__body {
-    height: 50px;
+    // height: 50px;
   }
   /*Показываем бургер и задаём стили*/
   .header__burger {
@@ -120,6 +120,9 @@
   }
   .header__menu.active {
     top: 0;
+    .header__list {
+      top: 110px;
+    }
   }
   .header__list {
     display: block;

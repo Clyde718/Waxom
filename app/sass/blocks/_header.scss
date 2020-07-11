@@ -1,11 +1,21 @@
 .header {
   background: center / cover no-repeat;
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-height: 100vh;
-    padding: 40px 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 40px 0px;
+  &__max {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+    padding: 30px 10px;
+  }
+  .active {
+    // background-color: rgba(16, 22, 54, 1);
+    background-color: #352f2d;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px 10px;
   }
 }
 .content {
@@ -16,7 +26,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: 100%;
     padding: 0px 10px;
     z-index: 4;
@@ -134,33 +143,33 @@
     .slick-arrow {
       position: absolute;
       top: 50%;
-      &.arrow-left {
-        z-index: 3;
-        left: 15px;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-left: 3px solid #d3c1ac;
-        border-bottom: 3px solid #d3c1ac;
-        transform: rotate(45deg) translateY(-50%);
-        cursor: pointer;
-        @media (max-width: 767px) {
-          display: none;
-        }
+    }
+    .arrow-right {
+      z-index: 3;
+      right: 15px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-right: 3px solid #d3c1ac;
+      border-bottom: 3px solid #d3c1ac;
+      transform: rotate(-45deg) translateY(-50%);
+      cursor: pointer;
+      @media (max-width: 767px) {
+        display: none;
       }
-      &.arrow-right {
-        z-index: 3;
-        right: 15px;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-right: 3px solid #d3c1ac;
-        border-bottom: 3px solid #d3c1ac;
-        transform: rotate(-45deg) translateY(-50%);
-        cursor: pointer;
-        @media (max-width: 767px) {
-          display: none;
-        }
+    }
+    .arrow-left {
+      z-index: 3;
+      left: 15px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-left: 3px solid #d3c1ac;
+      border-bottom: 3px solid #d3c1ac;
+      transform: rotate(45deg) translateY(-50%);
+      cursor: pointer;
+      @media (max-width: 767px) {
+        display: none;
       }
     }
   }

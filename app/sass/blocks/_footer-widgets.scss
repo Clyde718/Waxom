@@ -1,0 +1,146 @@
+.footer-widgets {
+  background-color: #191919;
+  padding: 77px 0px 82px 0px;
+  &_md {
+    color: #00bff3;
+  }
+
+  &_link {
+  }
+
+  &__row {
+    display: flex;
+    margin: 0px -15px;
+  }
+
+  &__columns {
+    padding: 0px 15px;
+    flex: 0 1 25%;
+  }
+
+  &__item {
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+  }
+
+  &__brand {
+    font-size: 34px;
+    letter-spacing: -1px;
+    color: $text-color-default;
+    font-weight: 400;
+    text-align: right;
+  }
+
+  &__text {
+    margin: 31px 0px 0px 0px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__btn {
+    margin: 34px 0px 0px 0px;
+    .read_more {
+      color: #d1d1d1;
+    }
+  }
+
+  &__headline {
+    font-size: 24px;
+    color: $text-color-default;
+    font-weight: 700;
+    padding: 25px 0px 0px 0px;
+    margin: 0px 0px 33px 0px;
+  }
+
+  &__articles {
+  }
+
+  &__articles-item {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #242424;
+    padding: 0px 0px 22px 0px;
+    margin: 0px 0px 20px 0px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__articles-data {
+    font-size: 12px;
+    line-height: 20px;
+    color: #363636;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__articles-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__twitter {
+  }
+
+  &__twitter-item {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #242424;
+    padding: 0px 0px 22px 0px;
+    margin: 0px 0px 20px 0px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__twitter-content {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__twitter-data {
+    font-size: 12px;
+    line-height: 20px;
+    color: #363636;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__dribbble {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__dribbble-item {
+    flex: 0 1 50%;
+    display: block;
+  }
+
+  &__dribbble-img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+.read {
+  &_more {
+  }
+}

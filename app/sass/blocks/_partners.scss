@@ -1,0 +1,20 @@
+.partners {
+  padding: 130px 0px 80px 0px;
+  background: center / cover no-repeat;
+  &__row {
+    display: flex;
+    align-items: center;
+    margin: 0px -45px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__columns {
+    padding: 0px 45px;
+    flex: 0 1 25%;
+    margin: 0px 0px 50px 0px;
+  }
+
+  &__item {
+  }
+}

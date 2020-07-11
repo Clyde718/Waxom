@@ -44,9 +44,10 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0px 15px;
+  width: 100%;
 }
 
 .subtitle {
@@ -59,6 +60,10 @@ body {
   }
 }
 
+// .header__body--active {
+//   height: 76px;
+// }
+
 @import "blocks/header";
 @import "blocks/button";
 @import "blocks/burger";
@@ -70,6 +75,8 @@ body {
 @import "blocks/statistics";
 @import "blocks/mobile";
 @import "blocks/posts";
+@import "blocks/partners";
+@import "blocks/footer-widgets";
 @import "blocks/footer";
 // adaptive
 @import "blocks/media";
