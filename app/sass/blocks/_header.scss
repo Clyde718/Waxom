@@ -80,6 +80,7 @@
     color: $text-color-default;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.2s ease-in;
     &:hover {
       color: #c7b299;
     }
@@ -210,6 +211,13 @@
 
   &__slider-btn {
     margin: 53px 0px 10px 0px;
+  }
+  .button {
+    box-shadow: none;
+    &:hover {
+      background-color: $text-color-default;
+      color: #555;
+    }
   }
 }
 

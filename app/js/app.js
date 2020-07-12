@@ -111,21 +111,15 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 991,
         settings: {
-          // arrows: false,
-          // centerMode: true,
-          // centerPadding: '40px',
-          // slidesToShow: 3
+          slidesToShow: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
-          // arrows: false,
-          // centerMode: true,
-          // centerPadding: '40px',
-          // slidesToShow: 1
+          slidesToShow: 1
         }
       }
     ]

@@ -12,44 +12,49 @@
   <div class="wrapper">
     <div class="content">
       <header class="header" style="background-image: url(img/dest/header-slider-bg.jpg);">
-        <div class="container">
-          <div class="header__body">
-            <div class="header__col">
-              <a class="header__logo" href="#">
-                <img class="header__img" src="img/dest/header-logo.png" alt="header-logo">
-                <span class="header__brand">Waxom</span>
-              </a>
-            </div>
-            <div class="header__col">
-              <div class="header__burger">
-                <span></span>
+
+        <div class="header__max" id="main-nav">
+          <div class="container">
+            <div class="header__body" id="header__body">
+              <div class="header__col">
+                <a class="header__logo" href="#">
+                  <img class="header__img" src="img/dest/header-logo.png" alt="header-logo">
+                  <span class="header__brand">Waxom</span>
+                </a>
               </div>
-            </div>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                <li class="header__item"><a href="#" class="header__link">About Us</a></li>
-                <li class="header__item"><a href="#" class="header__link">Portfolio</a></li>
-                <li class="header__item"><a href="#" class="header__link">Features</a></li>
-                <li class="header__item"><a href="#" class="header__link">Blog</a></li>
-                <li class="header__item"><a href="#" class="header__link">Pricing</a></li>
-                <li class="header__item"><a href="#" class="header__link">Shortcodes</a></li>
-                <li class="header__item"><a href="#" class="header__link">Contact</a></li>
-              </ul>
-            </nav>
-            <div class="header__col">
-              <div class="header__info">
-                <div class="header__cart">
-                  <img src="icons/icon-cart.svg" alt="icon-cart">
+              <div class="header__col">
+                <div class="header__burger">
+                  <span></span>
                 </div>
-                <div class="header__search">
-                  <img src="icons/icon-search.svg" alt="icon-search">
+              </div>
+              <nav class="header__menu">
+                <ul class="header__list">
+                  <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                  <li class="header__item"><a href="#" class="header__link">About Us</a></li>
+                  <li class="header__item"><a href="#" class="header__link">Portfolio</a></li>
+                  <li class="header__item"><a href="#" class="header__link">Features</a></li>
+                  <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+                  <li class="header__item"><a href="#" class="header__link">Pricing</a></li>
+                  <li class="header__item"><a href="#" class="header__link">Shortcodes</a></li>
+                  <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header__col">
+                <div class="header__info">
+                  <div class="header__cart">
+                    <img src="icons/icon-cart.svg" alt="icon-cart">
+                  </div>
+                  <div class="header__search">
+                    <img src="icons/icon-search.svg" alt="icon-search">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="header__content">
+        <div class="header__content">
+          <div class="container">
             <div class="header__slider">
               <div class="header__slider-item">
                 <div class="header__slider-subtitle">
@@ -146,9 +151,13 @@
                   <a class="button" href="#">Get Started</a>
                 </div>
               </div>
+
+
+
             </div>
           </div>
         </div>
+
       </header>
 
       <section class="services">
@@ -157,7 +166,7 @@
             <div class="services__columns">
               <div class="services__item">
                 <div class="services__img">
-                  <img src="icons/block/pencil.svg" alt="pencil">
+                  <span class="icon-pencil"></span>
                 </div>
                 <h4 class="services__title">Web & App Design</h4>
                 <div class="services__paragraph">
@@ -170,7 +179,7 @@
             <div class="services__columns">
               <div class="services__item">
                 <div class="services__img">
-                  <img src="icons/block/dev.svg" alt="dev">
+                  <span class="icon-dev"></span>
                 </div>
                 <h4 class="services__title">Development</h4>
                 <div class="services__paragraph">
@@ -184,7 +193,7 @@
             <div class="services__columns">
               <div class="services__item">
                 <div class="services__img">
-                  <img src="icons/block/nut.svg" alt="nut">
+                  <span class="icon-nut"></span>
                 </div>
                 <h4 class="services__title">Customization</h4>
                 <div class="services__paragraph">
@@ -197,7 +206,7 @@
             <div class="services__columns">
               <div class="services__item">
                 <div class="services__img">
-                  <img src="icons/block/folder.svg" alt="folder">
+                  <span class="icon-folder"></span>
                 </div>
                 <h4 class="services__title">Marketing</h4>
                 <div class="services__paragraph">
@@ -276,8 +285,9 @@
               <div class="projects__item">
                 <div class="projects__img" style="background: url(img/dest/latest-projects/01.png);">
                   <div class="projects__inner">
-                    <span class="projects__inner-link icon-link"></span>
-                    <span class="projects__inner-search icon-search"></span>
+                    <span class="icon-link"></span>
+                    <!-- <span class="projects__inner-link icon-link"></span> -->
+                    <!-- <span class="projects__inner-search icon-search"></span> -->
                   </div>
                 </div>
                 <div class="projects__caption">
@@ -837,13 +847,37 @@
 
 
       </div>
-      <footer class="footer">sadd</footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__columns">
+              <div class="footer__item">
+                <nav class="footer__nav">
+                  <ul class="footer__list">
+                    <li class="footer__list-item">Copyright © 2015 <span class="footer_md">Waxom</span></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#">Privacy Policy</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#">FAQ</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#">Support</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="footer__columns">
+              <div class="footer__item">
+                <div class="footer__signature">Designed by <span class="footer_md">ThemeFire</span></div>
+                <div class="footer__signature">Only on <span class="footer_md">Envato Market</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
 
     <script src="js/libs/libs.min.js"></script>
-    <script src="js/libs/jquery.spincrement.min.js"></script>
     <!-- Подключение библиотек -->
+    <script src="js/libs/jquery.spincrement.min.js"></script>
+    <!-- spincrement -->
     <script src="js/app.min.js"></script>
     <!-- Подключение пользовательских скриптов -->
 </body>

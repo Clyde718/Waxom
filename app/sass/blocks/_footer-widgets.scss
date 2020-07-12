@@ -11,11 +11,18 @@
   &__row {
     display: flex;
     margin: 0px -15px;
+    flex-wrap: wrap;
   }
 
   &__columns {
     padding: 0px 15px;
     flex: 0 1 25%;
+    @media (max-width: 991px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 676px) {
+      flex: 0 1 100%;
+    }
   }
 
   &__item {
@@ -53,6 +60,10 @@
     margin: 34px 0px 0px 0px;
     .read_more {
       color: #d1d1d1;
+      transition: 0.3s;
+      &:hover {
+        color: #bba890;
+      }
     }
   }
 
@@ -76,6 +87,14 @@
     &:last-child {
       margin: 0px 0px 0px 0px;
     }
+    &:hover {
+      .footer-widgets__articles-data {
+        color: $text-color-default;
+      }
+      .footer-widgets__articles-title {
+        color: #c7b299;
+      }
+    }
   }
 
   &__articles-data {
@@ -84,6 +103,7 @@
     color: #363636;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in;
   }
 
   &__articles-title {
@@ -92,6 +112,7 @@
     color: #555555;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in;
   }
 
   &__twitter {
@@ -106,6 +127,14 @@
     &:last-child {
       margin: 0px 0px 0px 0px;
     }
+    &:hover {
+      .footer-widgets__twitter-content {
+        color: #c7b299;
+      }
+      .footer-widgets__twitter-data {
+        color: $text-color-default;
+      }
+    }
   }
 
   &__twitter-content {
@@ -114,6 +143,7 @@
     color: #555555;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in;
   }
 
   &__twitter-data {
@@ -122,6 +152,7 @@
     color: #363636;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in;
   }
 
   &__dribbble {
@@ -132,12 +163,22 @@
   &__dribbble-item {
     flex: 0 1 50%;
     display: block;
+    overflow: hidden;
+    @media (max-width: 991px) {
+      flex: 0 1 130px;
+    }
+    &:hover {
+      .footer-widgets__dribbble-img {
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__dribbble-img {
     width: 100%;
     display: block;
     height: auto;
+    transition: 0.3s;
   }
 }
 .read {

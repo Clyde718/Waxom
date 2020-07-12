@@ -1,5 +1,5 @@
-@import "_fonts.scss"; // Шрифты
-@import "_icon-font.scss";
+@import "global/fonts"; // Шрифты
+@import "blocks/icon-font"; // Иконочный шрифт
 @import "global/vars"; // Переменные
 @import "global/global"; // Глобальные стили
 @import "libs/libs"; // Сборка из библиотек

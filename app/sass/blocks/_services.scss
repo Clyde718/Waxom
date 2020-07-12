@@ -29,6 +29,12 @@
       .services__line {
         background-color: #c7b299;
       }
+      .icon-pencil,
+      .icon-dev,
+      .icon-nut,
+      .icon-folder {
+        color: #c7b299;
+      }
     }
   }
 
@@ -59,6 +65,15 @@
     height: 3px;
     background-color: #f1eee9;
     margin: 0 auto;
+    transition: all 0.3s ease-out;
+  }
+
+  .icon-pencil,
+  .icon-dev,
+  .icon-nut,
+  .icon-folder {
+    font-size: 47px;
+    color: #555555;
     transition: all 0.3s ease-out;
   }
 }
