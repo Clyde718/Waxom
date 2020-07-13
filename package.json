@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -24,6 +25,7 @@
     "mixitup": "^3.3.1",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wowjs": "^1.1.3"
   }
 }

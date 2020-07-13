@@ -1,3 +1,32 @@
 .slick-list {
   overflow: hidden;
 }
+.header__slider-subtitle {
+  animation-delay: 0.1s;
+}
+.header__slider-title {
+  animation-delay: 0.3s;
+}
+.header__slider-description {
+  animation-delay: 0.5s;
+}
+.header__slider-btn {
+  animation-delay: 0.8s;
+}
+
+.up-arrow {
+  display: none;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 30px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

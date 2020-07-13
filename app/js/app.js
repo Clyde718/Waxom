@@ -7,7 +7,15 @@ $(document).ready(function () {
     prevArrow: '<div class="arrow-left"></div>',
     nextArrow: '<div class="arrow-right"></div>',
     appendDots: $('.header__content'),
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
   });
 
   $('.header__burger').click(function (event) {
@@ -49,12 +57,6 @@ $(document).ready(function () {
     if ($(".projects__item:hidden").length == 0) {
       $("#load-more").fadeOut("slow");
     }
-    // $("html,body").animate(
-    //   {
-    //     scrollTop: $(this).offset().top
-    //   },
-    //   1500
-    // );
   });
 
 
@@ -140,6 +142,27 @@ $(document).ready(function () {
       $('#main-nav').removeClass('active');
     };
   })
+
+
+  new WOW().init();
+
+
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.up-arrow').fadeIn();
+    } else {
+      $('.up-arrow').fadeOut();
+    }
+  });
+
+
+
+  $("a[href='#up']").click(function () {
+    var _href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+    return false;
+  });
 
 });
 

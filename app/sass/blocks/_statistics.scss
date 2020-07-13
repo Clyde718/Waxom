@@ -3,7 +3,7 @@
   background-image: -moz-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
   background-image: -ms-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
   background-image: -webkit-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
-
+  overflow: hidden;
   &__row {
     display: flex;
     align-items: center;
